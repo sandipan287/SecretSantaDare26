@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Video background */
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Snow animation */
+.snow::before {
+    content: "❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄";
+    position: absolute;
+    top: -10%;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    animation: snow 10s linear infinite;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+@keyframes snow {
+    from { top: -10%; }
+    to { top: 110%; }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    width: 320px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 15vh;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+h1 {
+    color: #c1121f;
+}
+h3{
+    color: #21867a;
+}
+h5{
+    color: rgb(70, 138, 75);
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #21867a;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}

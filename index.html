@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secret Santa Dare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Video (MUTED - required) -->
+<video autoplay muted loop id="bgVideo">
+    <source src="./WhatsApp Video 2025-12-26 at 00.20.38_53efe3c9.mp4" type="video/mp4">
+</video>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="./WhatsApp Audio 2025-12-24 at 23.32.34_caa7d4ca.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Snow -->
+<div class="snow"></div>
+
+<div class="container">
+    <h1>🎅 Secret Santa 🎁</h1>
+    <h3>Wish you Merry Christmas 🎄🎊</h3>
+    <h5>Are you ready to get your secret dare..🎅</h5>
+    
+
+    <div id="welcome">
+        <p>Enter your name</p>
+        <input type="text" id="username" placeholder="Your name">
+        <button onclick="startGame()">Start 🎄</button>
+    </div>
+
+    <div id="game" style="display:none;">
+        <h2 id="userDisplay"></h2>
+        <button onclick="getDare()">Get Your Dare 🎁</button>
+        <div id="result"></div>
+    </div>
+    <div></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
